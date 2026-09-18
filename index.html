@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX FIT | Premium Dark-Mode Athletic Gym & Performance Center</title>
+  <meta name="description" content="State-of-the-art equipment, 24/7 access, elite personal trainers, recovery sauna zone, and functional turf area at APEX FIT. Claim your 3-Day Free Pass today!">
+  <link rel="stylesheet" href="./styles/main.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL STICKY HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo-brand nav-route-trigger">
+        <div class="logo-icon">A</div>
+        <span>APEX<span class="text-neon">FIT</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#memberships" class="nav-link">Memberships</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#memberships" class="btn-primary nav-route-trigger" style="padding: 0.75rem 1.4rem; font-size: 0.85rem;">
+          <span>Claim 3-Day Free Pass</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================================================================
+       PAGE 1: HOME PAGE
+       ========================================================================== -->
+  <main id="page-home" class="page-view active-page">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      
+      <div class="container hero-content">
+        <div class="badge-neon" style="margin-bottom: 1rem;">
+          <span>⚡</span> PREMIER ATHLETIC FACILITY & RECOVERY CLUB
+        </div>
+        <h1 class="hero-title">
+          TRANSFORM YOUR BODY.<br>
+          <span class="text-neon">ELEVATE YOUR MIND.</span>
+        </h1>
+        <p class="hero-sub">
+          State-of-the-art equipment, elite personal trainers, infrared sauna recovery, and a high-energy community built to help you conquer your physical limits.
+        </p>
+        <div class="hero-ctas">
+          <a href="#memberships" class="btn-primary nav-route-trigger">
+            <span>Join Now</span> <span>→</span>
+          </a>
+          <a href="#gallery" class="btn-secondary nav-route-trigger">
+            <span>Take Virtual Tour</span>
+          </a>
+        </div>
+
+        <!-- Metric Counter Bar -->
+        <div class="metrics-bar">
+          <div class="metric-item">
+            <div class="metric-number" data-target="5000" data-suffix="+">5,000+</div>
+            <div class="metric-label">Active Members</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">24/7</div>
+            <div class="metric-label">Member Facility Access</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number" data-target="15" data-suffix="+">15+</div>
+            <div class="metric-label">Certified Coaches</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number" data-target="99" data-suffix="%">99%</div>
+            <div class="metric-label">Goal Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Highlights Bento Grid -->
+    <section class="section-padding container">
+      <div class="section-header">
+        <span class="badge-neon">WHY CHOOSE APEX</span>
+        <h2 class="section-title">BUILT FOR <span class="text-neon">PEAK PERFORMANCE</span></h2>
+        <p style="color: var(--text-muted);">Explore our high-performance zones engineered for strength, endurance, and rapid physical recovery.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Card 1: 24/7 Access (Large) -->
+        <div class="bento-card bento-card-lg">
+          <img src="./assets/hero.jpg" alt="24/7 Gym Access" class="bento-card-bg">
+          <div class="bento-content">
+            <div class="bento-icon">🔑</div>
+            <h3 class="bento-title">24/7 Unlimited Access</h3>
+            <p class="bento-desc">Biometric keycard security entry allows you to train on your schedule, early morning or late night, 365 days a year.</p>
+          </div>
+          <a href="#memberships" class="btn-secondary nav-route-trigger" style="width: fit-content; margin-top: 1.5rem; padding: 0.5rem 1rem; font-size: 0.8rem;">Explore Keycard Access</a>
+        </div>
+
+        <!-- Bento Card 2: Personal Training (Medium) -->
+        <div class="bento-card bento-card-md">
+          <img src="./assets/strength.jpg" alt="Elite Personal Trainers" class="bento-card-bg">
+          <div class="bento-content">
+            <div class="bento-icon">🏋️‍♂️</div>
+            <h3 class="bento-title">Elite Personal Training</h3>
+            <p class="bento-desc">1-on-1 customized strength programs and biometric body composition tracking with top certified strength coaches.</p>
+          </div>
+          <a href="#memberships" class="btn-secondary nav-route-trigger" style="width: fit-content; margin-top: 1.5rem; padding: 0.5rem 1rem; font-size: 0.8rem;">Book Coach Session</a>
+        </div>
+
+        <!-- Bento Card 3: Recovery Zone (Small) -->
+        <div class="bento-card bento-card-sm">
+          <img src="./assets/sauna.jpg" alt="Recovery & Sauna Zone" class="bento-card-bg">
+          <div class="bento-content">
+            <div class="bento-icon">🔥</div>
+            <h3 class="bento-title">Infrared Sauna & Plunge</h3>
+            <p class="bento-desc">Full-spectrum infrared heat, hydrotherapy cold plunges, and hyperbaric recovery lounges.</p>
+          </div>
+        </div>
+
+        <!-- Bento Card 4: Functional Turf (Small) -->
+        <div class="bento-card bento-card-sm">
+          <img src="./assets/turf.jpg" alt="Functional Turf Area" class="bento-card-bg">
+          <div class="bento-content">
+            <div class="bento-icon">🏃‍♂️</div>
+            <h3 class="bento-title">Functional Athletic Turf</h3>
+            <p class="bento-desc">50-yard sprint track, heavy sled pushes, battle ropes, kettlebells, and plyometric equipment.</p>
+          </div>
+        </div>
+
+        <!-- Bento Card 5: Custom Nutrition (Small) -->
+        <div class="bento-card bento-card-sm">
+          <div class="bento-content">
+            <div class="bento-icon">🥗</div>
+            <h3 class="bento-title">Precision Macro Nutrition</h3>
+            <p class="bento-desc">In-house registered dietitians creating tailor-made meal plans matching your exact caloric intake goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof & Community Strip -->
+    <section class="social-strip section-padding">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="badge-neon">JOIN THE APEX MOVEMENT</span>
+          <h2 class="section-title">FOLLOW <span class="text-neon">@APEXFITGYM</span></h2>
+          <p style="color: var(--text-muted);">Real members pushing limits daily. Tag your workouts with #APEXFIT for a feature.</p>
+        </div>
+
+        <div class="insta-grid">
+          <div class="insta-card">
+            <img src="./assets/strength.jpg" alt="Apex Fit Community 1">
+            <div class="insta-overlay"><span>📷</span></div>
+          </div>
+          <div class="insta-card">
+            <img src="./assets/turf.jpg" alt="Apex Fit Community 2">
+            <div class="insta-overlay"><span>📷</span></div>
+          </div>
+          <div class="insta-card">
+            <img src="./assets/sauna.jpg" alt="Apex Fit Community 3">
+            <div class="insta-overlay"><span>📷</span></div>
+          </div>
+          <div class="insta-card">
+            <img src="./assets/hero.jpg" alt="Apex Fit Community 4">
+            <div class="insta-overlay"><span>📷</span></div>
+          </div>
+        </div>
+
+        <!-- Embedded Facebook Community Invite Card -->
+        <div class="fb-community-card">
+          <div>
+            <div class="badge-neon" style="margin-bottom: 0.5rem;">OFFICIAL COMMUNITY GROUP</div>
+            <h3 style="font-size: 1.8rem;">APEX ATHLETES FACEBOOK HUB</h3>
+            <p style="color: var(--text-muted); max-width: 500px; margin-top: 0.5rem;">
+              Connect with 3,200+ members, share workout logs, join monthly fitness challenges, and receive weekly coaching Q&A recordings.
+            </p>
+          </div>
+          <a href="https://facebook.com" target="_blank" class="btn-primary btn-amber">
+            <span>Join FB Group (3.2k Members)</span> <span>🔗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       PAGE 2: GALLERY
+       ========================================================================== -->
+  <main id="page-gallery" class="page-view">
+    
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge-neon">FACILITY TOUR</span>
+        <h1 class="section-title" style="margin-top: 0.5rem;">INSIDE APEX FIT — <span class="text-neon">VISUAL EXPERIENCE</span></h1>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0 auto;">
+          Take a look inside our 25,000 sq. ft. high-performance sanctuary equipped with premier lifting gear, turf, and luxury amenities.
+        </p>
+
+        <!-- Category Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn gallery-filter-btn active" data-filter="all">All Zones</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="strength">Strength Zone</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="turf">Cardio & Turf</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="sauna">Recovery & Sauna</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="classes">Group Classes</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Grid -->
+    <section class="container section-padding">
+      <div class="gallery-grid" id="galleryGrid">
+        
+        <div class="gallery-card" data-category="strength" data-desc="Heavy power racks with competition calibrated plates and rogue barbells.">
+          <img src="./assets/strength.jpg" alt="Strength Power Racks">
+          <div class="gallery-info">
+            <span class="gallery-tag">Strength Zone</span>
+            <div class="gallery-title">Power Racks & Free Weights</div>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="turf" data-desc="50-yard indoor turf with heavy sleds, battle ropes, and kettlebell racks.">
+          <img src="./assets/turf.jpg" alt="Functional Athletic Turf">
+          <div class="gallery-info">
+            <span class="gallery-tag">Cardio & Turf</span>
+            <div class="gallery-title">Functional Sprint Track</div>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="sauna" data-desc="Infrared sauna heated to 150°F paired with 45°F cold plunge tanks.">
+          <img src="./assets/sauna.jpg" alt="Infrared Sauna & Plunge Pool">
+          <div class="gallery-info">
+            <span class="gallery-tag">Recovery & Sauna</span>
+            <div class="gallery-title">Infrared Sauna Lounge</div>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="strength" data-desc="Custom dumbbell rack ranging from 5 lbs up to 150 lbs heavy bells.">
+          <img src="./assets/hero.jpg" alt="Dumbbell Rack Lineup">
+          <div class="gallery-info">
+            <span class="gallery-tag">Strength Zone</span>
+            <div class="gallery-title">Heavy Dumbbell Sanctuary</div>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="classes" data-desc="High-energy group HIIT arena featuring neon surround lighting and heart rate monitors.">
+          <img src="./assets/turf.jpg" alt="High Energy HIIT Class Arena">
+          <div class="gallery-info">
+            <span class="gallery-tag">Group Classes</span>
+            <div class="gallery-title">Apex HIIT & Conditioning Studio</div>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="sauna" data-desc="Luxury locker rooms equipped with keyless lockers, rainfall showers, and towel service.">
+          <img src="./assets/sauna.jpg" alt="Luxury Member Locker Rooms">
+          <div class="gallery-info">
+            <span class="gallery-tag">Recovery & Sauna</span>
+            <div class="gallery-title">Executive Member Lockers</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Video Reel Highlight Section -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-neon">LIVE ATMOSPHERE</span>
+          <h2 class="section-title">APEX <span class="text-neon">VIDEO REEL SHOWCASE</span></h2>
+          <p style="color: var(--text-muted);">Watch our high-intensity group classes and training sessions in motion.</p>
+        </div>
+
+        <div class="reels-grid">
+          <div class="reel-card">
+            <img src="./assets/strength.jpg" alt="Heavy Powerlifting Reel" class="reel-video-placeholder">
+            <div class="reel-overlay">
+              <div class="badge-neon" style="align-self: flex-start;">HEAVY LIFTING</div>
+              <button class="reel-play-btn" title="Play Video Reel">▶</button>
+              <div>
+                <div class="reel-title" style="font-weight: 700; font-size: 1.1rem;">Max Effort Powerlifting Night</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Duration: 0:45 • Strength Team</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reel-card">
+            <img src="./assets/turf.jpg" alt="Apex Boxing & Conditioning" class="reel-video-placeholder">
+            <div class="reel-overlay">
+              <div class="badge-neon" style="align-self: flex-start; background: rgba(255,153,0,0.2); color: var(--accent-amber); border-color: var(--accent-amber);">BOXING & HIIT</div>
+              <button class="reel-play-btn" title="Play Video Reel">▶</button>
+              <div>
+                <div class="reel-title" style="font-weight: 700; font-size: 1.1rem;">High Energy Boxing & Turf Sprints</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Duration: 1:12 • Coach Marcus</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reel-card">
+            <img src="./assets/sauna.jpg" alt="Infrared Sauna Recovery" class="reel-video-placeholder">
+            <div class="reel-overlay">
+              <div class="badge-neon" style="align-self: flex-start;">RECOVERY ZONE</div>
+              <button class="reel-play-btn" title="Play Video Reel">▶</button>
+              <div>
+                <div class="reel-title" style="font-weight: 700; font-size: 1.1rem;">Post-Workout Cold Plunge Routine</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Duration: 0:30 • Sauna Club</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <img src="" alt="Enlarged Gym View" id="lightboxImg" class="lightbox-img">
+      <div class="lightbox-details">
+        <h3 id="lightboxTitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></h3>
+        <p id="lightboxDesc" style="color: var(--text-muted); font-size: 0.95rem;"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       PAGE 3: MEMBERSHIPS & BOOKING
+       ========================================================================== -->
+  <main id="page-memberships" class="page-view">
+    
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge-neon">TRANSPARENT PRICING</span>
+        <h1 class="section-title" style="margin-top: 0.5rem;">CHOOSE YOUR <span class="text-neon">MEMBERSHIP PASS</span></h1>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0 auto;">
+          No long-term contracts. No hidden fees. Cancel or upgrade anytime with 1-click mobile access.
+        </p>
+
+        <!-- Interactive Billing Toggle Switch -->
+        <div class="billing-toggle-wrapper">
+          <span class="toggle-label active" id="lblMonthly">Monthly Billing</span>
+          <div class="switch-toggle" id="billingToggle">
+            <div class="switch-circle"></div>
+          </div>
+          <span class="toggle-label" id="lblAnnual">Annual Billing</span>
+          <span class="discount-badge">SAVE 20% OFF</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Cards Grid -->
+    <section class="container section-padding">
+      <div class="pricing-grid">
+        
+        <!-- Tier 1: Basic Pass -->
+        <div class="pricing-card">
+          <div>
+            <span class="badge-neon">ENTRY PASS</span>
+            <h3 class="plan-name" style="margin-top: 1rem;">BASIC PASS</h3>
+            <div class="plan-price" id="priceBasic">$29 <span>/ month</span></div>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Perfect for self-guided weightlifters needing main gym floor access.</p>
+            
+            <ul class="plan-features">
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Standard Gym Floor Access</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Free Locker Room & Showers</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> APEX Mobile Companion App</li>
+              <li class="plan-feature-item" style="opacity: 0.4;"><span class="check-icon">✕</span> 24/7 Biometric Keycard Access</li>
+              <li class="plan-feature-item" style="opacity: 0.4;"><span class="check-icon">✕</span> Infrared Sauna & Cold Plunge</li>
+            </ul>
+          </div>
+          <button class="btn-secondary select-plan-btn" data-plan="Basic Pass" style="width: 100%;">Select Basic Pass</button>
+        </div>
+
+        <!-- Tier 2: Pro Member (Highlighted / Most Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">MOST POPULAR</div>
+          <div>
+            <span class="badge-neon">ALL-ACCESS</span>
+            <h3 class="plan-name" style="margin-top: 1rem;">PRO MEMBER</h3>
+            <div class="plan-price" id="pricePro" style="color: var(--accent-lime);">$59 <span>/ month</span></div>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Designed for dedicated athletes wanting 24/7 access and sauna recovery.</p>
+            
+            <ul class="plan-features">
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Full Gym Floor & Turf Access</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> <strong>24/7 Unlimited Keycard Access</strong></li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Unlimited Group Classes (HIIT, Boxing)</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Infrared Sauna & Cold Plunge Lounge</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> 1 Free Monthly Guest Pass</li>
+            </ul>
+          </div>
+          <button class="btn-primary select-plan-btn" data-plan="Pro Member" style="width: 100%;">Join as Pro Member</button>
+        </div>
+
+        <!-- Tier 3: VIP Athlete -->
+        <div class="pricing-card">
+          <div>
+            <span class="badge-neon" style="background: rgba(255,153,0,0.1); color: var(--accent-amber); border-color: var(--accent-amber);">ELITE COACHING</span>
+            <h3 class="plan-name" style="margin-top: 1rem;">VIP ATHLETE</h3>
+            <div class="plan-price" id="priceVip">$99 <span>/ month</span></div>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Complete package including personal training and custom nutrition plans.</p>
+            
+            <ul class="plan-features">
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Everything in Pro Member Tier</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> <strong>1-on-1 Personal Trainer Session / mo</strong></li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Custom Biometric Nutrition Plan</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Unlimited Guest Passes</li>
+              <li class="plan-feature-item"><span class="check-icon">✓</span> Free APEX Team Gym Apparel Kit</li>
+            </ul>
+          </div>
+          <button class="btn-secondary select-plan-btn" data-plan="VIP Athlete" style="width: 100%;">Claim VIP Access</button>
+        </div>
+
+      </div>
+
+      <!-- Interactive Lead Form -->
+      <div class="form-section-wrapper" id="membershipFormSection">
+        <div style="text-align: center;">
+          <span class="badge-neon">START YOUR PASS</span>
+          <h2 class="section-title" style="margin-top: 0.5rem;">APPOINTMENT & <span class="text-neon">PASS REGISTRATION</span></h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Fill out the details below to lock in your 3-Day Free Pass or activate your membership.</p>
+        </div>
+
+        <form id="membershipForm" class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="formName">Full Name *</label>
+            <input type="text" id="formName" class="form-input" placeholder="e.g. Alex Morgan" required>
+            <span class="error-text">Please enter your full name</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formEmail">Email Address *</label>
+            <input type="email" id="formEmail" class="form-input" placeholder="alex@domain.com" required>
+            <span class="error-text">Please enter a valid email</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formPhone">Phone Number *</label>
+            <input type="tel" id="formPhone" class="form-input" placeholder="(555) 019-2834" required>
+            <span class="error-text">Please enter your phone number</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formBranch">Preferred Location *</label>
+            <select id="formBranch" class="form-select" required>
+              <option value="Downtown HQ">Downtown Apex HQ</option>
+              <option value="Westside Hub">Westside Performance Hub</option>
+              <option value="Metro Apex">Metro Apex Center</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="formPlan">Selected Membership Tier *</label>
+            <select id="formPlan" class="form-select" required>
+              <option value="3-Day Free Trial Pass">3-Day Free Pass (Trial)</option>
+              <option value="Basic Pass">Basic Pass ($29/mo)</option>
+              <option value="Pro Member" selected>Pro Member ($59/mo — Most Popular)</option>
+              <option value="VIP Athlete">VIP Athlete ($99/mo)</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width" style="margin-top: 1rem;">
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 1.1rem;">
+              <span>Complete Pass Registration</span> <span>⚡</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Membership Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="success-modal-card">
+      <div class="success-icon">✓</div>
+      <span class="badge-neon">PASS ACTIVATED</span>
+      <h2 style="font-size: 2rem; margin: 1rem 0 0.5rem 0;">WELCOME TO APEX!</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        Congratulations <strong id="modalMemberName" style="color: var(--text-main);">Member</strong>! Your <span id="modalSelectedPlan" class="text-neon" style="font-weight: 800;">PRO MEMBER</span> pass has been registered.
+      </p>
+      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 2rem; background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm);">
+        📩 Check your inbox for your QR keycard barcode and front desk check-in instructions.
+      </p>
+      <button class="btn-primary" id="closeSuccessBtn" style="width: 100%;">Done & Return to Site</button>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       PAGE 4: MEMBER REVIEWS & COMMUNITY
+       ========================================================================== -->
+  <main id="page-reviews" class="page-view">
+    
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge-neon">PROVEN RESULTS</span>
+        <h1 class="section-title" style="margin-top: 0.5rem;">REAL MEMBERS. <span class="text-neon">REAL RESULTS.</span></h1>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0 auto;">
+          Read unedited reviews and transformation stories from athletes, lifters, and fitness enthusiasts at APEX FIT.
+        </p>
+
+        <!-- Overall Rating Banner -->
+        <div class="rating-banner">
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">OVERALL RATING</div>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.3rem;">
+              <div class="rating-score">4.9</div>
+              <div>
+                <div class="stars-row">★★★★★</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Based on 450+ Google & Facebook Reviews</div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary btn-amber" id="leaveReviewBtn">
+            <span>Leave a Review</span> <span>✍️</span>
+          </button>
+        </div>
+
+        <!-- Filter by Goal -->
+        <div class="filter-bar">
+          <button class="filter-btn review-filter-btn active" data-goal="all">All Stories</button>
+          <button class="filter-btn review-filter-btn" data-goal="weight-loss">Weight Loss</button>
+          <button class="filter-btn review-filter-btn" data-goal="muscle-gain">Muscle Gain</button>
+          <button class="filter-btn review-filter-btn" data-goal="general-fitness">General Fitness</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section class="container section-padding">
+      <div class="reviews-grid" id="reviewsGrid">
+        
+        <!-- Card 1 -->
+        <div class="review-card" data-goal="muscle-gain">
+          <div>
+            <div class="member-header">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="member-avatar">
+              <div>
+                <div class="member-name">Marcus Vance</div>
+                <span class="verified-tag">✓ Verified Member (2 Yrs)</span>
+              </div>
+            </div>
+            <span class="transformation-badge">Muscle Gain • +18 lbs Muscle</span>
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "APEX FIT is hands down the best gym I've ever trained at. The heavy powerlifting racks, turf area, and 24/7 keycard access allow me to train around my shift work. Added 40 lbs to my deadlift!"
+            </p>
+          </div>
+          <div class="tagged-coach">Coach: Marcus Steele (Head Strength Coach)</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="review-card" data-goal="weight-loss">
+          <div>
+            <div class="member-header">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="member-avatar">
+              <div>
+                <div class="member-name">Elena Rostova</div>
+                <span class="verified-tag">✓ Verified Member (1 Yr)</span>
+              </div>
+            </div>
+            <span class="transformation-badge">Weight Loss • -32 lbs Fat</span>
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "The group HIIT boxing classes and infrared sauna recovery helped me shed 32 lbs in 8 months. The community energy keeps you accountable every single day."
+            </p>
+          </div>
+          <div class="tagged-coach">Coach: Sarah Jenkins (HIIT Specialist)</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="review-card" data-goal="general-fitness">
+          <div>
+            <div class="member-header">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Chen" class="member-avatar">
+              <div>
+                <div class="member-name">David Chen</div>
+                <span class="verified-tag">✓ Verified Member (6 Mos)</span>
+              </div>
+            </div>
+            <span class="transformation-badge">General Fitness • Athletic Mobility</span>
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "Cleanliness and equipment quality are 10/10. Cold plunge after a heavy turf session is a game changer for recovery. Highly recommend the Pro Member tier!"
+            </p>
+          </div>
+          <div class="tagged-coach">Coach: Self-Guided Pro Member</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Interactive Review Submission Drawer -->
+  <div class="drawer-overlay" id="reviewDrawer">
+    <div class="drawer-content">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.4rem;">SUBMIT YOUR REVIEW</h3>
+          <button id="closeDrawerBtn" style="font-size: 1.5rem; cursor: pointer;">✕</button>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">
+          Share your experience at APEX FIT to motivate fellow members.
+        </p>
+
+        <form id="reviewForm">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label class="form-label">Your Full Name *</label>
+            <input type="text" id="revName" class="form-input" placeholder="e.g. Jordan Lee" required>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label class="form-label">Transformation Goal *</label>
+            <select id="revGoal" class="form-select">
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="Weight Loss">Weight Loss</option>
+              <option value="General Fitness">General Fitness</option>
+              <option value="Athletic Performance">Athletic Performance</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label class="form-label">Star Rating *</label>
+            <div class="star-rating-input star-picker">
+              <span data-val="1">★</span>
+              <span data-val="2">★</span>
+              <span data-val="3">★</span>
+              <span data-val="4">★</span>
+              <span data-val="5" class="selected">★</span>
+            </div>
+            <input type="hidden" id="selectedRatingInput" value="5">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label class="form-label">Tagged Coach (Optional)</label>
+            <select id="revCoach" class="form-select">
+              <option value="Marcus Steele (Strength)">Marcus Steele (Strength)</option>
+              <option value="Sarah Jenkins (HIIT)">Sarah Jenkins (HIIT)</option>
+              <option value="Self-Guided Member">Self-Guided Member</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label class="form-label">Your Review / Story *</label>
+            <textarea id="revQuote" class="form-input" rows="4" placeholder="Tell us how APEX FIT helped you achieve your goals..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+            <span>Publish Review Now</span> <span>🚀</span>
+          </button>
+        </form>
+      </div>
+
+      <div style="font-size: 0.75rem; color: var(--text-dim); text-align: center; margin-top: 2rem;">
+        🔒 All reviews are verified against active APEX FIT keycard accounts.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER (All Pages)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Left: Brand & Mission -->
+        <div class="footer-brand">
+          <a href="#home" class="logo-brand nav-route-trigger">
+            <div class="logo-icon">A</div>
+            <span>APEX<span class="text-neon">FIT</span></span>
+          </a>
+          <p>
+            APEX FIT is a premium high-performance athletic facility built for individuals who demand elite equipment, 24/7 access, and luxury recovery amenities.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.3rem;">
+            <div>📍 450 Ironclad Way, Performance District, NY 10001</div>
+            <div>📧 membership@apexfitgym.com</div>
+            <div>📞 (800) 555-APEX (2739)</div>
+          </div>
+        </div>
+
+        <!-- Center 1: Quick Navigation -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="nav-route-trigger">Home Overview</a></li>
+            <li><a href="#gallery" class="nav-route-trigger">Visual Gallery & Tour</a></li>
+            <li><a href="#memberships" class="nav-route-trigger">Membership Tiers</a></li>
+            <li><a href="#reviews" class="nav-route-trigger">Member Reviews</a></li>
+            <li><a href="#memberships" class="nav-route-trigger">Claim 3-Day Free Pass</a></li>
+          </ul>
+        </div>
+
+        <!-- Center 2: Operating Hours -->
+        <div>
+          <h4 class="footer-title">Operating Hours</h4>
+          <ul class="footer-links">
+            <li style="color: var(--accent-lime); font-weight: 700;">⚡ Members: 24 Hours / 7 Days</li>
+            <li style="margin-top: 0.5rem; color: var(--text-muted);">Front Desk Staff:</li>
+            <li style="color: var(--text-muted);">Mon – Fri: 6:00 AM – 10:00 PM</li>
+            <li style="color: var(--text-muted);">Sat – Sun: 7:00 AM – 8:00 PM</li>
+          </ul>
+        </div>
+
+        <!-- Right: Social Connect -->
+        <div>
+          <h4 class="footer-title">Connect With Us</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Follow our community feeds for daily workouts, nutrition tips, and member features.</p>
+          
+          <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="Instagram">📸</a>
+            <a href="https://facebook.com" target="_blank" class="social-icon-btn" title="Facebook">📘</a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" title="YouTube">▶️</a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" title="TikTok">🎵</a>
+            <a href="https://maps.google.com" target="_blank" class="social-icon-btn" title="Google Maps Location">📍</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 APEX FIT GYM LLC. All Rights Reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+          <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+          <a href="#" style="color: var(--text-dim);">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Floating Mobile Sticky CTA Bar -->
+  <div class="mobile-sticky-bar">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+      <div>
+        <div style="font-size: 0.75rem; color: var(--accent-lime); font-weight: 800; text-transform: uppercase;">LIMITED TIME PASS</div>
+        <div style="font-weight: 800; font-size: 0.95rem;">Try APEX FIT Free</div>
+      </div>
+      <a href="#memberships" class="btn-primary nav-route-trigger" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        <span>Join Now</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Application JavaScript -->
+  <script src="./scripts/app.js"></script>
+  <script>
+    // Initialize Lucide Icons if loaded
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
